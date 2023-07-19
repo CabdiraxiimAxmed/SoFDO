@@ -2,7 +2,7 @@ import children from '../assets/images/smiling-children.png';
 import mogadishu from '../assets/images/mogadishu.jpg';
 
 const Target: React.FC = () => {
-  return <div className='targets-container'>
+  return <div id='targets' className='targets-container'>
     <br/>
     <br/>
     <div className='target-people-area-container'>

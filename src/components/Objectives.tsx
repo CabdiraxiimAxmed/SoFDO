@@ -2,7 +2,7 @@ import { objectives } from '../content.ts';
 
 const Objectives: React.FC = () => {
   return (
-    <div className="objectives-container">
+    <div id='objectives' className="objectives-container">
       <h1> What We Fight For </h1>
       <div className="objectives-cards">
         <div className='objective-card education'>

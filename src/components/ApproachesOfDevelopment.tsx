@@ -1,6 +1,6 @@
 
 const ApproachesOfDevelopment: React.FC = () => {
-  return <div className="approaches-development-container">
+  return <div id='approaches-development' className="approaches-development-container">
     <br/>
     <h1> SoFDO APPROACHES OF DEVELOPMENT </h1>
     <br/>
@@ -14,23 +14,23 @@ and future generations.</p>
 promoting: </p>
     <div className='lists'>
       <div>
-        <input type="checkbox" checked={true}/>
+        <input readOnly type="checkbox" checked={true}/>
         <label>Improved access to high-quality education, information, technologies and training and better nutrition and health</label>
       </div>
       <div>
-        <input type="checkbox" checked={true}/>
+        <input readOnly type="checkbox" checked={true}/>
         <label>A more supportive and cohesive social environment</label>
       </div>
       <div>
-        <input type="checkbox" checked={true}/>
+        <input readOnly type="checkbox" checked={true}/>
         <label>Better access to basic and facilitating infrastructure</label>
       </div>
       <div>
-        <input type="checkbox" checked={true}/>
+        <input readOnly type="checkbox" checked={true}/>
         <label>More secure access to, and better management of, natural resources</label>
       </div>
       <div>
-        <input type="checkbox" checked={true}/>
+        <input readOnly type="checkbox" checked={true}/>
         <label>More secure access to financial resources; a policy and institutional environment that supports
 multiple livelihood strategies and promotes equitable access to competitive markets for all</label>
       </div>

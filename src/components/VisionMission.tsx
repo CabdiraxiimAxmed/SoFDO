@@ -2,7 +2,7 @@ import { visionMission } from '../content.ts';
 
 const VisionMission: React.FC = () => {
   return (
-    <div className="vision-mission-container">
+    <div id='vision-mission' className="vision-mission-container">
       <div className='vision'>
         <h1> Vision </h1>
         <br/>

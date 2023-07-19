@@ -9,7 +9,7 @@ import environment from '../assets/icons/environment.png';
 import development from '../assets/icons/development.png';
 import independence from '../assets/icons/independence.png';
 const CoreValues: React.FC = () => {
-  return <div className='core-values-container'>
+  return <div id='core-values' className='core-values-container'>
     <h1>SoFDO CORE VALUES AND PRINCIPLES</h1>
     <br/>
     <div className='core-values-cards'>

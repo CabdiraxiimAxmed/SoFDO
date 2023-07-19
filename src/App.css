@@ -1,11 +1,35 @@
 :root{
   --border-radius: 10px;
 }
+/*Header*/
 .header-container {
-  height: 2rem;
-  background-color: black;
-  position: static;
+  background-color: blue;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
 }
+
+.logo {
+  z-index: 3;
+}
+.other-links a{
+  font-family: "JetBrains Mono";
+  text-decoration: none;
+}
+.other-links {
+  display: flex;
+  justify-content: space-around;
+  z-index: 3;
+}
+.header-links {
+  border-radius: 4px;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+}
+.header-links:hover {
+  background-color: #23395d;
+}
+
 .home-container {
   position: relative;
   left: -1.9rem;
@@ -22,7 +46,6 @@
   display: flex;
   align-items: center;
   color: white;
-  z-index: -2;
 }
 .home-head-container::after {
   content: "";
@@ -30,7 +53,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, .4);
   z-index: -1;
 }
 .home-head-container div{
@@ -47,7 +70,7 @@
   color: white;
   background-color: #9747FF;
   cursor: pointer;
-  z-index: 3;
+  z-index: 10 !important;
 }
 /* VisionMission */
 .vision-mission-container {
@@ -120,6 +143,7 @@
 }
 .core-values-container .core-values-cards {
   display: grid;
+  width: 90%;
   grid-template-columns: repeat(auto-fit, minmax(214px, 1fr));
   grid-row-gap: 20px;
   justify-items: center;
@@ -188,6 +212,7 @@
 /*Target*/
 .targets-container {
   margin-left: 20px;
+  width: 97%;
 }
 .targets-container img{
   width: 100%;
@@ -202,6 +227,7 @@
 }
 .organizational-structure-container {
   margin-left: 20px;
+  width: 97%;
 }
 .organizational-structure-container div{
   justify-items: center;
@@ -222,6 +248,7 @@
 .network-funding-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  width: 97%;
   grid-row-gap: 20px;
 }
 .network-funding-container .funding-container, .network-funding-container .network-container {
@@ -252,6 +279,49 @@
   box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.2);
   transform: scale(1.02);
   font-weight: 600;
+}
+
+.footer-container {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #929fba;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-row-gap: 20px;
+  padding: 10px;
+  color: white;
+  font-size: 17px;
+}
+.footer-container .links a{
+  display: block;
+  margin-top: 5px;
+  text-decoration: none;
+  color: white;
+}
+.footer-container .contact p{
+  margin-top: 10px;
+}
+
+/* Background */
+.background-container {
+  width: 50%;
+  margin-top: 30px;
+}
+
+/*PageNotFound*/
+.page-not-found-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20rem;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #d9d9d9;
+  border-radius: 10px;
 }
 
 /* Tablets*/
@@ -310,4 +380,11 @@
  .network-funding-container { 
     width: 100%;
   }
+.footer-container .links, .footer-container .contact, .footer-container .org-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
+}
+
