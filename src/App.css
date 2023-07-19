@@ -8,6 +8,8 @@
 }
 .home-container {
   position: relative;
+  left: -1.9rem;
+  width: 100vw;
   top: -2rem;
 }
 /* Head */
@@ -36,7 +38,7 @@
   width: 30rem;
 }
 .home-head-container .learn-more-btn{
-  width: 20rem;
+  width: 15rem;
   padding: 15px 0;
   font-size: 18px;
   border-radius: var(--border-radius);
@@ -45,31 +47,36 @@
   color: white;
   background-color: #9747FF;
   cursor: pointer;
+  z-index: 3;
 }
 /* VisionMission */
 .vision-mission-container {
   margin-top: 30px;
   margin-left: 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-row-gap: 20px;
 }
 .vision-mission-container .vision, .vision-mission-container .mission{
-  width: 30rem;
+  width: 90%;
   padding: 20px;
   border-radius: var(--border-radius);
   box-shadow: 4px 4px 45px rgba(0, 0, 0, 0.2);
 }
+
+/* Objectives */
 .objectives-container {
   margin-left: 20px;
   margin-top: 30px;
 }
 .objectives-container .objectives-cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr)
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-row-gap: 20px;
 }
 .objectives-container .objectives-cards .objective-card{
   cursor: pointer;
-  width: 282px;
+  width: 90%;
   height: 414px;
   border-radius: var(--border-radius);
   position: relative;
@@ -77,6 +84,7 @@
   background-size: cover;
   background-position: center;
 }
+
 .objectives-container .objectives-cards .objective-card.education{
   background-image: url("./assets/images/children-studying.jpg");
 }
@@ -108,10 +116,13 @@
 .core-values-container {
   padding:0 20px;
   margin-top: 30px;
+  width: 100%;
 }
-.core-values-container .core-values-cards div {
-  display: flex;
-  justify-content: space-evenly;
+.core-values-container .core-values-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(214px, 1fr));
+  grid-row-gap: 20px;
+  justify-items: center;
 }
 
 .core-values-container .core-values-card {
@@ -156,16 +167,17 @@
   margin-left: 20px;
 }
 .programmatic-area-container div{
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-row-gap: 20px;
 }
-.focused-programmatic-card {
+.programmatic-area-container div .focused-programmatic-card {
   width: 356px;
   height: 294px;
   box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
   border-radius: var(--border-radius);
 }
@@ -178,37 +190,39 @@
   margin-left: 20px;
 }
 .targets-container img{
-  width: 451px;
+  width: 100%;
+  object-fit: cover;
   height: 255px;
 }
 .targets-container .target-people-area-container{
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-column-gap: 20px;
   align-items: center;
-}
-.targets-container .target-people-area-container .content{
-  flex: 0.8;
 }
 .organizational-structure-container {
   margin-left: 20px;
 }
 .organizational-structure-container div{
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-row-gap: 20px;
 }
 .organizational-structure-container div p{
   flex: 0.8;
 }
 .organizational-structure-container div img{
-  width: 565px;
+  width: 100%;
+  object-fit: contain;
   height: 303.58px;
 }
 
 /* NetworkFunding */
 .network-funding-container {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-row-gap: 20px;
 }
 .network-funding-container .funding-container, .network-funding-container .network-container {
   display: flex;
@@ -216,7 +230,7 @@
   flex-direction: column;
   text-align: center;
   justify-content: space-between;
-  width: 30rem;
+  width: 100%;
 }
 .network-funding-container .funding-container img, .network-funding-container .network-container img {
   width: 215px;
@@ -227,12 +241,73 @@
   padding: 4px 20px 4px 3px;
   height: 30px;
   cursor: pointer;
-  width: 50rem;
+  width: 100%;
+  max-width: 50rem;
+  margin-top: 5px;
   transition: all .3s linear;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
   font-weight: 500;
 }
 .organizational-strengths-container .list-box:hover {
   box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.2);
   transform: scale(1.02);
   font-weight: 600;
+}
+
+/* Tablets*/
+@media only screen and (max-width: 768px) {
+  /* VisionMission */
+  .vision-mission-container .vision, .vision-mission-container .mission{
+    width: 80%;
+  }
+}
+
+/* Small devices */
+@media only screen and (max-width: 600px) {
+  * {
+    margin-left: 0;
+   }
+  body {
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .core-values-container {
+    padding: 0;
+  }
+
+  .vision-mission-container {
+    width: 100%;
+  }
+
+  .organizational-strengths-container .list-box {
+    margin-top: 10px;
+  }
+
+  .approaches-development-container {
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+  }
+  .approaches-development-container p{
+    width: 97%;
+  }
+  .approaches-development-container .lists label{
+    font-weight: 400;
+  }
+  .programmatic-area-container {
+    margin-left: 0px;
+    padding: 10px;
+  }
+  .programmatic-area-container div .focused-programmatic-card {
+    width: 98%;
+  }
+  .targets-container {
+    margin-left: 0px;
+  }
+  .organizational-structure-container {
+    margin-left: 0px;
+  }
+ .network-funding-container { 
+    width: 100%;
+  }
 }

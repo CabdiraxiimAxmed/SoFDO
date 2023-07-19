@@ -4,7 +4,7 @@ const ApproachesOfDevelopment: React.FC = () => {
     <br/>
     <h1> SoFDO APPROACHES OF DEVELOPMENT </h1>
     <br/>
-    <p style={{width: "40rem"}}>SoFDO applies Sustainable Livelihoods approaches that provide a framework for addressing poverty and
+    <p style={{width: "100%"}}>SoFDO applies Sustainable Livelihoods approaches that provide a framework for addressing poverty and
 vulnerability in both development and humanitarian contexts. They have emerged from the growing
 realization of the need to put the poor and all aspects of their lives and means of living at the center of
 development and humanitarian work, while maintaining the sustainability of natural resources for present
