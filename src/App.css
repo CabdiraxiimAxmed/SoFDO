@@ -14,6 +14,12 @@
 
 .logo {
   z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo img{
+  width: 4rem;
 }
 .other-links a{
   font-family: "JetBrains Mono";
@@ -338,9 +344,6 @@
 
 /* Small devices */
 @media only screen and (max-width: 600px) {
-  .header-container {
-    display: none;
-  }
   * {
     margin-left: 0;
    }
@@ -387,11 +390,17 @@
  .network-funding-container { 
     width: 100%;
   }
-.footer-container .links, .footer-container .contact, .footer-container .org-info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
+  .footer-container .links, .footer-container .contact, .footer-container .org-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .other-links {
+    display: none;
+  }
+  .header-container {
+    background-color: transparent;
+  }
 }
 

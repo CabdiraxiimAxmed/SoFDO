@@ -1,9 +1,10 @@
+import logo from '../assets/images/logo.jpeg';
 import React from 'react';
 
 const Header: React.FC = () => {
   return (
     <div className='header-container'>
-      <a className='logo' href='#'>SoFDO</a>
+      <a className='logo' href='#'><img src={logo} /></a>
       <div className='other-links'>
         <a className='header-links' href='#home'>Home</a>
         <a className='header-links' href='#vision-mission'>Vision/Mission</a>
