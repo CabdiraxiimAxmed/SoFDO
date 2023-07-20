@@ -3,7 +3,7 @@ import React from 'react';
 const Header: React.FC = () => {
   return (
     <div className='header-container'>
-      <a className='logo' href='#'>{"<cabdiraxiim/>"}</a>
+      <a className='logo' href='#'>SoFDO</a>
       <div className='other-links'>
         <a className='header-links' href='#home'>Home</a>
         <a className='header-links' href='#vision-mission'>Vision/Mission</a>

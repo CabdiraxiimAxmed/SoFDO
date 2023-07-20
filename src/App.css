@@ -3,9 +3,13 @@
 }
 /*Header*/
 .header-container {
-  background-color: blue;
+  background-color: white;
   display: grid;
   grid-template-columns: 1fr 3fr;
+  position: fixed;
+  z-index: 20;
+  width: 100%;
+  left: 0;
 }
 
 .logo {
@@ -23,7 +27,7 @@
 .header-links {
   border-radius: 4px;
   padding: 5px;
-  color: white;
+  color: black;
   cursor: pointer;
 }
 .header-links:hover {
@@ -334,6 +338,9 @@
 
 /* Small devices */
 @media only screen and (max-width: 600px) {
+  .header-container {
+    display: none;
+  }
   * {
     margin-left: 0;
    }
