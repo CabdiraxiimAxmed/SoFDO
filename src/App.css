@@ -78,7 +78,7 @@
   border: none;
   font-weight: 500;
   color: white;
-  background-color: #9747FF;
+  background-color: #e7853a;
   cursor: pointer;
   z-index: 10 !important;
 }
@@ -294,7 +294,7 @@
 .footer-container {
   margin-top: 20px;
   padding: 10px;
-  background-color: #929fba;
+  background-color: #e7853a;
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));

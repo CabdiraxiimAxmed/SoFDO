@@ -20,8 +20,8 @@ const Footer: React.FC = () => {
     </div>
     <div className='contact'>
       <h5> Contact Us </h5>
-      <p> <BiSolidPhoneCall />  252 616409041 / 252 613788943</p>
-      <p> <AiOutlineMail />  sofdo99@gmail.com</p>
+      <p> <BiSolidPhoneCall />  252 616409041 / 252 615184520 / 252 617462780</p>
+      <p> <AiOutlineMail />  sofdo.som.org@gmail.com</p>
     </div>
   </div>
 }
