@@ -382,10 +382,13 @@
     width: 98%;
   }
   .targets-container {
-    margin-left: 0px;
+    margin-left: 10px;
   }
   .organizational-structure-container {
-    margin-left: 0px;
+    margin-left: 10px;
+  }
+  .organizational-strengths-container {
+    margin-left: 10px;
   }
  .network-funding-container { 
     width: 100%;
