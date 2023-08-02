@@ -365,7 +365,7 @@
 
   .approaches-development-container {
     width: 100%;
-    margin: 0;
+    margin-left: 2px;
     padding: 5px;
   }
   .approaches-development-container p{
