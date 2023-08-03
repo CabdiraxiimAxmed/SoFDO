@@ -6,6 +6,7 @@ const Head: React.FC = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
+    console.log("clicked");
     navigate('/background')
   }
  
