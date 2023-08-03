@@ -13,7 +13,7 @@ const Head: React.FC = () => {
   return (
     <div id="home" className="home-head-container">
       <div>
-        <h1>{home.title}</h1>
+        <h1 style={{color: "white"}}>{home.title}</h1>
         <br/>
         <p> { home.subTitle }</p>
         <br/>
