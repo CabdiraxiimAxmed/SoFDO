@@ -27,17 +27,21 @@
 }
 .other-links {
   display: flex;
+  align-items: center;
   justify-content: space-around;
   z-index: 3;
 }
 .header-links {
   border-radius: 4px;
+  height: 2rem;
   padding: 5px;
   color: black;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 .header-links:hover {
-  background-color: #23395d;
+  background-color: rgba(0, 0, 0, 0.09);
 }
 
 .home-container {
