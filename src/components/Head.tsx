@@ -7,7 +7,7 @@ const Head: React.FC = () => {
 
   const handleClick = () => {
     console.log("clicked");
-    navigate('/background')
+    navigate('/blog')
   }
  
   return (
@@ -17,7 +17,7 @@ const Head: React.FC = () => {
         <br/>
         <p> { home.subTitle }</p>
         <br/>
-        <button onClick={handleClick} className='learn-more-btn'> Learn More </button>
+        <button onClick={handleClick} className='learn-more-btn'> Read Articles </button>
       </div>
     </div>
   );

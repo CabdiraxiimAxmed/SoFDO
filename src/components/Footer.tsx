@@ -2,7 +2,7 @@ import { BiSolidPhoneCall } from 'react-icons/bi'
 import { AiOutlineMail } from 'react-icons/ai'
 
 const Footer: React.FC = () => {
-  return <div className='footer-container'>
+  return <div id="footer" className='footer-container'>
     <div className='org-info'>
       <h5> About Company </h5>
       <p>Somali Feeding and Development Organization (SoFDO) a national NGO, was founded in July 2012 in
@@ -17,6 +17,8 @@ const Footer: React.FC = () => {
       <a href='#core-values'>Core Values</a>
       <a href='#approaches-development'>Approaches Of Development</a>
       <a href='#targets'>Target Groups</a>
+      <a href='#footer'>Contact Us</a>
+      <a href='/blog'>blog</a>
     </div>
     <div className='contact'>
       <h5> Contact Us </h5>

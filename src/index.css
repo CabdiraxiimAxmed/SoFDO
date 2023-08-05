@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Montserrat:wght@400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Montserrat:wght@400;500;600;700&family=Poppins:ital@0;1&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +13,14 @@ p {
   font-size: 15px;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
   color: #e7853a;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 8px 0;
+}
+.preview-container * {
+  font-family: 'Poppins', sans-serif;
 }
