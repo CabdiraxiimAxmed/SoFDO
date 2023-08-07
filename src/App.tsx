@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './pages/Header.tsx';
 import Home from './pages/Home.tsx';
 import annual_report_2023 from './articles/annual-report-2023.ts';
