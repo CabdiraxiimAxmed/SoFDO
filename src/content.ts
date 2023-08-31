@@ -1,5 +1,5 @@
 const home = {
-  title: "Somali Feeding Development Organization(SoFDO)",
+  title: "omali Feeding Development Organization(SoFDO)",
   subTitle: "improved access to high-quality education, information, technologies and training and better nutrition and health",
 }
 
