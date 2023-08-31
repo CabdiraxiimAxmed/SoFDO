@@ -1,4 +1,4 @@
-import children from '../assets/images/smiling-children.png';
+import people from '../assets/images/people_to_work.jpeg';
 import mogadishu from '../assets/images/mogadishu.jpg';
 
 const Target: React.FC = () => {
@@ -11,7 +11,7 @@ const Target: React.FC = () => {
         <p>SoFDO Feeding and development programs aim for the most vulnerable community groups including:
 IDPs, returnees, pastoral drop-outs and other vulnerable groups in Somalia.</p>
       </div>
-      <img src={children} />
+      <img src={people} />
     </div>
     <br/>
     <br/>
