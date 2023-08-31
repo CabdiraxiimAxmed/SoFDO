@@ -75,6 +75,12 @@
   margin-left: 20px;
   width: 30rem;
 }
+.home-head-buttons-container {
+  width:33rem !important;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-column-gap: 10px;
+}
 .home-head-container .learn-more-btn{
   width: 15rem;
   padding: 15px 0;
@@ -86,6 +92,7 @@
   background-color: #e7853a;
   cursor: pointer;
   z-index: 100 !important;
+  margin: 3px;
 }
 /* VisionMission */
 .vision-mission-container {
@@ -448,6 +455,10 @@
   .header-container {
     background-color: transparent;
   }
+
+.home-head-buttons-container {
+  width: inherit !important;
+}
 
   .background-container {
   }
