@@ -467,8 +467,8 @@
 .home-head-buttons-container {
   width: inherit !important;
 }
-
-  .background-container {
-  }
+.preview-container {
+  padding: 0px;
+}
 }
 
